@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import 'antd/dist/antd.css';
 import './App.css';
-import MyLayout from './components/my_layout';
+import MyLayout from './components/MyLayout/index';
 
 class App extends Component {
   render() {

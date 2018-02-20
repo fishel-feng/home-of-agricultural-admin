@@ -1,0 +1,38 @@
+.container {
+  height: 100vh
+}
+
+.container .logo-container {
+  color: #ccc;
+}
+
+.container .logo-container .logo-img {
+  width: 64px;
+  height: 64px;
+}
+
+.container .logo-container .logo-text {
+  line-height: 64px;
+}
+
+.right-container .right-header {
+  background: #35484d;
+  color: #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.right-container .right-content {
+  margin: 24px 16px;
+  padding: 24px;
+  background: #fff;
+}
+
+.right-container .right-footer {
+  background: #35484d;
+  color: #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

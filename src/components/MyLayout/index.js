@@ -1,16 +1,17 @@
 import { Layout, Menu, Icon } from 'antd';
 import React from 'react';
-import logo from '../logo.svg';
+import logo from '../../logo.svg';
+import './style.css'
 const { Header, Sider, Content, Footer } = Layout;
 
 export default class MyLayout extends React.Component {
   render() {
     return (
-      <Layout style={{height: '100vh'}}>
+      <Layout className="container">
         <Sider collapsed={false}>
-          <div style={{color: '#ccc'}}>
-            <img src={logo} alt="" style={{width: '64px', height: '64px'}}/>
-            <span style={{lineHeight: '64px'}}>小农之家管理系统</span>
+          <div className="logo-container">
+            <img src={logo} className="logo-img" alt="这里是logo"/>
+            <span className="logo-text">小农之家管理系统</span>
           </div>
           <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']}>
             <Menu.Item key="1">
@@ -31,14 +32,14 @@ export default class MyLayout extends React.Component {
             </Menu.Item>
           </Menu>
         </Sider>
-        <Layout>
-          <Header style={{ background: '#35484d', color: '#ccc', display: 'flex', flexDirection: 'column', alignItems: 'flex-end' }}>
+        <Layout className="right-container">
+          <Header className="right-header">
             用户资料
           </Header>
-          <Content style={{ margin: '24px 16px', padding: 24, background: '#fff'}}>
+          <Content className="right-content">
             Content
           </Content>
-          <Footer style={{ background: '#35484d', color: '#ccc', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+          <Footer className="right-footer">
             &copy; 2018 隋堤倦客
           </Footer>
         </Layout>
